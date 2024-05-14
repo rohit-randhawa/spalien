@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #C7AE6A; /* Gold color for text */
+    background-color: #000000; /* Black background */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000; /* Black */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #C7AE6A;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.logo {
+    height: 50px; /* Adjust based on actual logo size */
+    width: auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #C7AE6A;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about {
+    border-bottom: 1px solid #C7AE6A; /* Adds a subtle separator */
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.testimonial, .faq-item {
+    background-color: #1a1a1a; /* Darker background for contrast */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+article {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #202020; /* Dark footer */
+    color: #C7AE6A;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+/* Responsive Grid for Products */
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Stacks the products on smaller screens */
+    }
+}
+/* Contact Form Styles */
+#contact form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    color: #C7AE6A;
+}
+
+#contact label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #C7AE6A;
+    border-radius: 4px;
+    background-color: #000;
+    color: #C7AE6A;
+}
+
+#contact button {
+    background-color: #C7AE6A;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-logo {
+    height: 50px; /* Adjust based on actual logo size */
+    margin-bottom: 10px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-content a {
+    color: #C7AE6A;
+    text-decoration: none;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar nav ul li {
+        margin-bottom: 10px;
+    }
+}
